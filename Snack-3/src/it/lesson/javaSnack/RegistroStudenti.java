@@ -38,17 +38,11 @@ public class RegistroStudenti {
         System.arraycopy(students, 0, newArray, 0, students.length);
         System.arraycopy(elementArray, 0, newArray, students.length, elementArray.length);
 
+
         arrayPrint(newArray);
+
+        students = newArray;
         
-        
-        System.out.println("Vuoi inserire un nuovo studente ? (yes / no)");
-        
-        int choice = scan.nextInt();
-        if (choice == 1) {
-            addElement();
-        }
-        
-        scan.close();
     }
     
  }
