@@ -31,6 +31,7 @@ public class RegistroStudenti {
     public void addElement() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Inserisci un nuovo studente :");
+        System.out.println("");
         String newElement = scan.nextLine();
         String[] elementArray = {newElement};
         String [] newArray = new String[students.length + elementArray.length];
@@ -40,8 +41,10 @@ public class RegistroStudenti {
 
 
         arrayPrint(newArray);
+        System.out.println("");
 
         students = newArray;
+        
         
     }
     

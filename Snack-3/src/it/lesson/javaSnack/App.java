@@ -20,13 +20,17 @@ public class App {
         studentlist.arrayPrint(studentlist.getStudents());
         
         studentlist.addElement();
-        System.out.println("Vuoi inserire un nuovo studente ? (yes / no)");
         
-        int choice = scan.nextInt();
-        if (choice == 1) {
+        char choice;
+
+        do {
+            System.out.println("Vuoi inserire un nuovo studente ? (y / n");
+        
+            choice = scan.next().charAt(0);
             studentlist.addElement();
-            
-        }
+
+        } while (choice == 'y' && choice != 'n');
+        
        
         
 
